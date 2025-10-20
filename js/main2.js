@@ -7,7 +7,13 @@ var error5 = document.querySelector('.error5');
 signinbtn.addEventListener('click', login);
 
 function login() {
-    var users = JSON.parse(localStorage.getItem('info')) || [];
+    var users;
+    if (localStorage.getItem('info') == null) {
+        users = [];
+    } else {
+        users = JSON.parse(localStorage.getItem('info'));
+    }
+
 
     if (check()) {
         var found = false;
@@ -44,7 +50,3 @@ function check() {
     }
     return true;
 }
-
-
-
-

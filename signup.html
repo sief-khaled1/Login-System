@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <section class="d-flex justify-content-center align-items-center text-center">
+        <div id="sign-in" class="sign d-flex flex-column justify-content-center text-center mt-5">
+            <div class="sign-head">
+                <h1>Smart Login System</h1>
+            </div>
+            <div class="sign-form">
+                <input type="text" class="form-control" placeholder="Enter your name" aria-label="Enter your name"
+                    id="nameinput">
+                <input type="email" class="form-control" placeholder="Enter your email" aria-label="Enter your email"
+                    id="emailinput">
+                <input type="password" class="form-control" placeholder="Enter your password"
+                    aria-label="Enter your password" id="passwordinput">
+                <p class="text-danger d-none" id="errormessage">email already exists</p>
+                <p class="text-danger d-none" id="errormessage2">All inputs is required</p>
+                <p class="text-danger d-none" id="errormessage3">something is wrong</p>
+                <p class="text-success d-none" id="successmessage">Success</p>
+
+            </div>
+            <div class="sign-button">
+                <button class="btn signupbtn">Sign Up</button>
+            </div>
+            <div class="sign-span">
+                <span>You have an account? <span><a href="index.html">Sign in</a></span></span>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

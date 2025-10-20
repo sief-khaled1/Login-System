@@ -1,0 +1,93 @@
+body {
+  background: linear-gradient(135deg, #1E1E1E, #2C2C2C);
+  color: #E0E0E0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sign {
+  background: #2C2C2C;
+  padding: 40px 50px;
+  box-shadow: 0 0 30px rgba(230, 57, 70, 0.25);
+  width: 50rem;
+}
+
+.sign-head h1 {
+  color: #E63946;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.sign-form .form-control {
+  background: #1E1E1E;
+  border: 1px solid #3A3A3A;
+  border-radius: 8px;
+  color: #E0E0E0;
+  padding: 12px;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.sign-form .form-control::placeholder {
+  color: #A0A0A0;
+}
+
+.sign-form .form-control:focus {
+  border-color: #E63946;
+  box-shadow: 0 0 8px rgba(230, 57, 70, 0.4);
+  background: #1E1E1E;
+}
+
+.sign-button .btn {
+  background: #E63946;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  padding: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: 0.3s;
+}
+
+.sign-button .btn:hover {
+  background: #C62828;
+}
+
+.sign-span {
+  margin-top: 15px;
+  color: #A0A0A0;
+}
+
+.sign-span a {
+  color: #E63946;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.sign-span a:hover {
+  text-decoration: underline;
+}
+
+.navbar {
+  background: linear-gradient(135deg, #1E1E1E, #2C2C2C);
+  z-index: 9999;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.welcome p {
+  font-size: 50px;
+  color: #E63946;
+  background: linear-gradient(135deg, #1E1E1E, #2C2C2C);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  padding: 2rem 15rem;
+
+}
+
+.logoutbtn.btn {
+  border: 2px solid #E63946;
+}
+
+.logoutbtn.btn.btn:hover , .logoutbtn.btn:focus {
+  background-color: #E63946;
+}

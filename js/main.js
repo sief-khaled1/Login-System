@@ -29,11 +29,11 @@ function signup() {
 
 function validateform(element) {
     var regex = {
-        nameinput: /^[a-z0-9_-]{3,15}$/,
+        nameinput: /^[A-Za-z0-9_-]{3,15}$/,
         emailinput: /^[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+$/,
         passwordinput: /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/
     };
-    if (regex[element.id].trim().toLowerCase().test(element.value).trim().toLowerCase()) {
+    if (regex[element.id].test(element.value)) {
         return true;
 
     }

@@ -33,7 +33,7 @@ function validateform(element) {
         emailinput: /^[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+$/,
         passwordinput: /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/
     };
-    if (regex[element.id].test(element.value)) {
+    if (regex[element.id].trim().toLowerCase().test(element.value).trim().toLowerCase()) {
         return true;
 
     }
@@ -88,9 +88,7 @@ var signinbtn = document.querySelector('.signinbtn');
 function signin() {
     for (var j = 0; j < dataList.length; j++) {
         if (dataList[j].email.toLowerCase() === emailinput.value.trim().toLowerCase() && dataList[j].password == passwordinput.value) {
-            window.location.href='home.html'
+            window.location.href = 'home.html'
         }
     }
 }
-
-

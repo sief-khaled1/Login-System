@@ -70,6 +70,7 @@ function check() {
         error2.classList.add('d-none');
         error3.classList.add('d-none');
         error.classList.add('d-none');
+        window.location.href='index.html';
         return true;
     }
     else {
